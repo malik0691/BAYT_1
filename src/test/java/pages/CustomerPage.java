@@ -48,24 +48,15 @@ public class CustomerPage extends CucumberRunner {
     }
 
     public void removeAdd() throws Exception {
-        Thread.sleep(5000);
-        WebElement ParentFrame = driver.findElement(By.xpath("//iframe[@title='3rd party ad content']"));
-        explicitWait(ParentFrame);
-        driver.switchTo().frame(ParentFrame);
+        Thread.sleep(3000);
+        WebElement ChildFrame = driver.findElement(By.xpath("//iframe[@title='3rd party ad content' or @title='Advertisement']"));
 
-        WebElement ChildFrame = driver.findElement(By.xpath("//iframe[@title='Advertisement']"));
-
-        if (!ChildFrame.isDisplayed()) {
-            WebElement closeBtn = driver.findElement(Close);
-            closeBtn.click();
-//            driver.switchTo().frame(ChildFrame);
-        } else {
-            driver.switchTo().frame(ChildFrame);
-            WebElement closeBtn = driver.findElement(Close);
-            closeBtn.click();
-        }
+        driver.switchTo().frame(ChildFrame);
+        WebElement closeBtn = driver.findElement(Close);
+        closeBtn.click();
 
         driver.switchTo().defaultContent(); // Return to main window
+
     }
 
 
