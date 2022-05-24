@@ -1,0 +1,4 @@
+PathToFile:
+
+  path: '\\src\\test\\java\\TestData\\userInput1.xlsx'
+  test: Data here
