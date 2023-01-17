@@ -1,4 +1,5 @@
-**To execute this project, you just need to run the 'CucumberRunner' file inside the java under src folder after compiling**
+**To execute this project, you just need to run the 'CucumberRunner' file inside the java under src folder, it will build automatically. 
+First 3 parts have been automated according to the assignment given as you can look into the 'Customer.feature' file**
 
 
 **Part 4:**
