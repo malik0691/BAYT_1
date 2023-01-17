@@ -2,6 +2,7 @@ package utils;
 
 
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -27,7 +28,7 @@ public class SeleniumDriver {
     	driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        waitDriver = new WebDriverWait(driver, TIMEOUT);
+        waitDriver = new WebDriverWait(driver, Duration.ofSeconds(TIMEOUT));
         driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
         String window=driver.getWindowHandle();

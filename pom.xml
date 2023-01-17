@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>test.cucumber</groupId>
-	<artifactId>GURU99</artifactId>
+	<artifactId>BAYT</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
 
@@ -60,7 +60,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-server</artifactId>
-			<version>3.141.59</version>
+			<version>4.0.0-alpha-2</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-html -->
@@ -80,8 +80,17 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>3.141.59</version>
+			<version>4.6.0</version>
 		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/ru.yandex.qatools.ashot/ashot -->
+		<dependency>
+			<groupId>ru.yandex.qatools.ashot</groupId>
+			<artifactId>ashot</artifactId>
+			<version>1.5.4</version>
+		</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/com.sun/tools -->
 

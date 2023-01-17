@@ -2,6 +2,7 @@ package Helper;
 
 import java.awt.AWTException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.List;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
@@ -23,7 +24,7 @@ public class SeleniumHelper {
     protected JavascriptExecutor jsExecutor;
     protected WebDriver driver;
     public SeleniumHelper() throws IOException {
-        this.wait = new WebDriverWait(driver, 15);
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         jsExecutor = ((JavascriptExecutor) driver);
     }
 

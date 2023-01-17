@@ -11,29 +11,34 @@ public class LoginSteps {
     LoginPage lg = new LoginPage();
     CucumberRunner c = new CucumberRunner();
 
-    @And("^Enter \"([^\"]*)\" data inside Email field for Login$")
-    public void enterDataInsideEmailFieldForLogin(String EmailF)  throws Throwable {
-        lg.EmailLogin(EmailF);
+
+    @And("^scrolldown to the footer and click on AboutUs link$")
+    public void scrolldownToTheFooterAndClickOnAboutUsLink() throws Exception{
+        lg.aboutUsLink();
     }
 
-    @And("^Enter \"([^\"]*)\" data inside Password field for Login$")
-    public void enterDataInsidePasswordFieldForLogin(String PassF)  throws Throwable {
-        lg.PassLogin(PassF);
+    @And("^user click the specific job$")
+    public void userClickTheSpecificJob() throws Exception {
+        lg.clickSpecificJob();
     }
 
-    @Then("^click on Login button$")
-    public void clickOnLoginButton()throws Throwable {
-        lg.ButtonLogin();
+    @And("^user apply to the job$")
+    public void userApplyToTheJob() throws Exception {
+        lg.applyToJob();
     }
 
-    @Then("^Verify that user successfully gets login$")
-    public void verifyThatUserSuccessfullyGetsLogin()throws Throwable {
-        lg.VerifyUserLoogedIn();
+    @Given("^i am on Login page$")
+    public void iAmOnLoginPage() throws Exception{
+        lg.hitLoginURL();
     }
 
-    @Given("^i am on Guru99 page$")
-    public void iAmOnGuruPage() throws Exception {
+    @And("^navigate to the Account Settings$")
+    public void navigateToTheAccountSettings() throws Exception {
+        lg.accountSettings();
+    }
 
-        c.setEnv();
+    @And("^scroll down to delete existing account$")
+    public void scrollDownToDeleteExistingAccount() throws Exception{
+        lg.removeAccount();
     }
 }

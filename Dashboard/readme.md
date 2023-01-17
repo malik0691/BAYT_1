@@ -1,13 +1,18 @@
-# Bootstrap 4, CSS3 and HTML5 Demo Exercise
+**To run this project, you just need to run the 'CucumberRunner' file in it after compiling**
 
-This site has been built using CSS3,  Bootstrap 4 and HTML5.
 
-It was developed following the w3newbie tutorial series on YouTube [Found Here](https://www.youtube.com/watch?v=9cKsq14Kfsw)
+**Part 4:**
 
-# Explanation
-The development is an experiment in responsiveness, which is rather nifty and cool. 
+There are still some scenarios that can be covered. Like
+1. Registration using social media and business accounts.
+2. Verification of job filter to check if it populates result accordingly.
+3. Sharing the specific job using different social media
+4. Verification of Add Preferred job section and its expected outcome after login.
 
-Depending on the size of the screen being used to view the page, the page will dynamically reconfigure itself using Bootstraps Grid System.
+**Part 5:**
 
-## Installation
-Clone repository and open Index.html to view.
+Issues that figured out while executing the test cases for that particular mentioned page.
+1. ‘Job title’ and ‘Job Skills’ still accepts the numeric value and special characters if we pass 10 digit numbers and add  the space between the phone numbers e.g (92) 301 13121
+2. Experience field accepts the alphabets unlike ‘Age’ field
+3. ‘Job Desc’ label is not clearly defined.
+4. ‘Job title’ and ‘Job Skills’ still accepts the email if .com is not added like softwaretest@gmail

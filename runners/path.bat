@@ -1,2 +1,2 @@
-call cd F:\Mohsin\projects\BullhornLatest\bullhorn
+call cd
 pause
